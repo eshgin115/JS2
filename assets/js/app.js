@@ -1,27 +1,26 @@
 function Group(){
 var text=document.getElementById('tex');
-var inp=document.getElementById('inp')
+var inp =document.getElementById('inp');
 var result=inp.value.slice(-3,-2)
+
   if(result==3){
- 
-    inp.style.color='black'
-   text.innerHTML=`${inp.value} qrupusuz`
-   text.style.color='black'
+   
+  
+     text.innerHTML=`<span style="color:black" >${inp.value}</span> Group code`
+
+  
+  
   
 }
 else if(result==2){
+   text.innerHTML=`<span style="color:red" >${inp.value}</span> Group code`
   
-    inp.style.color='red'
-   text.innerHTML=`${inp.value} qrupusuz`
-   text.style.color='red'
 
 }
 else if(result==1){
    
 
-    inp.style.color='yellow'
-   text.innerHTML=`${inp.value} qrupusuz`
-   text.style.color='yellow'
+   text.innerHTML=`<span style="color:yellow" >${inp.value}</span> Group code`
 
    }
    else{
